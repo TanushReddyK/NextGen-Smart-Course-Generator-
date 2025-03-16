@@ -1,0 +1,247 @@
+<h1>Chapter 1: Introduction to Computer Systems</h1>
+
+<h2>1.1 What is a Computer System?</h2>
+<p>A computer system is a collection of hardware and software components that work together to perform tasks. It accepts data (input), processes it, and produces information (output).</p>
+
+<h3>Key Components:</h3>
+<ul>
+    <li><strong>Hardware:</strong> The physical parts of the computer, such as the CPU, memory, and storage devices.</li>
+    <li><strong>Software:</strong> The set of instructions that tell the hardware what to do, including operating systems and applications.</li>
+    <li><strong>Data:</strong> Raw facts and figures that are processed by the computer.</li>
+    <li><strong>Users:</strong> People who interact with the computer system.</li>
+</ul>
+
+<h2>1.2 Hardware Components</h2>
+<p>Understanding the core hardware components is crucial for system functionality.</p>
+
+<h3>CPU (Central Processing Unit):</h3>
+<p>The "brain" of the computer, responsible for executing instructions. Key characteristics include clock speed (GHz) and number of cores.</p>
+<img src="cpu_image.jpg" alt="CPU Image" width="300">
+<p><em>Image showing a typical CPU chip.</em></p>
+
+<h3>Memory (RAM - Random Access Memory):</h3>
+<p>Volatile storage used to hold data and instructions that the CPU is currently using.  Faster than storage but loses data when power is off.</p>
+<ul>
+    <li><strong>DRAM (Dynamic RAM):</strong> Commonly used type of RAM.</li>
+    <li><strong>SRAM (Static RAM):</strong> Faster and more expensive than DRAM, used in CPU caches.</li>
+</ul>
+
+<h3>Storage Devices:</h3>
+<p>Non-volatile storage used to store data permanently.</p>
+<ul>
+    <li><strong>HDD (Hard Disk Drive):</strong> Mechanical storage device using spinning platters.</li>
+    <li><strong>SSD (Solid State Drive):</strong>  Faster and more reliable than HDD, using flash memory.</li>
+</ul>
+
+<h3>Input/Output Devices:</h3>
+<p>Devices that allow the computer to interact with the outside world.</p>
+<ul>
+    <li><strong>Input:</strong> Keyboard, mouse, scanner</li>
+    <li><strong>Output:</strong> Monitor, printer, speakers</li>
+</ul>
+
+<h2>1.3 Software Components</h2>
+<p>Software provides the instructions for the hardware to execute.</p>
+
+<h3>Operating System (OS):</h3>
+<p>Manages hardware resources and provides a platform for applications to run. Examples include Windows, macOS, and Linux.</p>
+
+<h3>Application Software:</h3>
+<p>Programs designed to perform specific tasks, such as word processing, web browsing, or gaming.</p>
+
+<h3>System Software:</h3>
+<p>Utilities that help manage and maintain the computer system, such as antivirus software and disk defragmenters.</p>
+
+<h2>1.4 Number Systems (Binary, Decimal, Hexadecimal)</h2>
+<p>Computers use binary (base-2) to represent data. Understanding different number systems is essential for low-level programming and data representation.</p>
+
+<h3>Binary (Base-2):</h3>
+<p>Uses only two digits: 0 and 1.</p>
+
+<h3>Decimal (Base-10):</h3>
+<p>The number system we use in everyday life, using digits 0-9.</p>
+
+<h3>Hexadecimal (Base-16):</h3>
+<p>Uses digits 0-9 and letters A-F (A=10, B=11, C=12, D=13, E=14, F=15). Commonly used for representing memory addresses and colors.</p>
+
+<h3>Conversion Examples:</h3>
+<ul>
+    <li>Decimal 10 = Binary 1010</li>
+    <li>Decimal 15 = Hexadecimal F</li>
+</ul>
+
+<hr>
+<h3>Interactive Video</h3>
+<p>Watch this video to learn more about computer systems:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qr7BW-KZnYI" title="Introduction to Computer Systems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h1>Chapter 2: Operating Systems</h1>
+
+<h2>2.1 What is an Operating System?</h2>
+<p>An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs.</p>
+
+<h3>Key Functions:</h3>
+<ul>
+    <li><strong>Resource Management:</strong> Allocating resources like CPU time, memory, and I/O devices to different programs.</li>
+    <li><strong>Process Management:</strong> Creating, scheduling, and terminating processes.</li>
+    <li><strong>Memory Management:</strong> Managing memory allocation and deallocation.</li>
+    <li><strong>File System Management:</strong> Organizing and managing files and directories.</li>
+    <li><strong>User Interface:</strong> Providing a way for users to interact with the computer.</li>
+</ul>
+
+<h2>2.2 Types of Operating Systems</h2>
+<p>Different OS types cater to various needs.</p>
+
+<h3>Batch Operating System:</h3>
+<p>Processes jobs in batches without user interaction.  Efficient for repetitive tasks.</p>
+
+<h3>Time-Sharing Operating System:</h3>
+<p>Allows multiple users to share the computer's resources simultaneously, providing interactive sessions.</p>
+
+<h3>Real-Time Operating System (RTOS):</h3>
+<p>Designed for applications that require immediate responses, such as industrial control systems and medical devices.</p>
+
+<h3>Distributed Operating System:</h3>
+<p>Manages a network of computers as a single system.</p>
+
+<h2>2.3 Process Management</h2>
+<p>Managing processes efficiently is critical for OS performance.</p>
+
+<h3>Process States:</h3>
+<ul>
+    <li><strong>New:</strong> Process is being created.</li>
+    <li><strong>Ready:</strong> Process is waiting to be assigned to the CPU.</li>
+    <li><strong>Running:</strong> Process is currently being executed by the CPU.</li>
+    <li><strong>Waiting:</strong> Process is waiting for an event to occur (e.g., I/O completion).</li>
+    <li><strong>Terminated:</strong> Process has finished execution.</li>
+</ul>
+
+<h3>Process Scheduling Algorithms:</h3>
+<p>Algorithms used to determine which process to run next.</p>
+<ul>
+    <li><strong>First-Come, First-Served (FCFS):</strong> Processes are executed in the order they arrive.</li>
+    <li><strong>Shortest Job First (SJF):</strong> Processes with the shortest execution time are executed first.</li>
+    <li><strong>Priority Scheduling:</strong> Processes are assigned priorities, and higher priority processes are executed first.</li>
+    <li><strong>Round Robin:</strong> Each process is given a fixed time slice, and processes are executed in a circular fashion.</li>
+</ul>
+
+<h2>2.4 Memory Management</h2>
+<p>Efficiently managing memory is vital for preventing system slowdowns.</p>
+
+<h3>Virtual Memory:</h3>
+<p>Technique that allows a computer to use more memory than is physically available by swapping portions of memory to disk.</p>
+
+<h3>Paging:</h3>
+<p>Dividing memory into fixed-size blocks called pages.</p>
+
+<h3>Segmentation:</h3>
+<p>Dividing memory into logical units called segments.</p>
+
+<img src="virtual_memory.png" alt="Virtual Memory" width="400">
+<p><em>Diagram illustrating virtual memory concept.</em></p>
+
+<h2>2.5 File Systems</h2>
+<p>How the OS organizes and manages files.</p>
+
+<h3>File System Operations:</h3>
+<ul>
+    <li><strong>Create:</strong> Create a new file.</li>
+    <li><strong>Read:</strong> Read data from a file.</li>
+    <li><strong>Write:</strong> Write data to a file.</li>
+    <li><strong>Delete:</strong> Delete a file.</li>
+    <li><strong>Open:</strong> Open a file for reading or writing.</li>
+    <li><strong>Close:</strong> Close a file.</li>
+</ul>
+
+<h3>Common File Systems:</h3>
+<ul>
+    <li><strong>FAT32:</strong> Older file system commonly used in USB drives.</li>
+    <li><strong>NTFS:</strong> More advanced file system used in Windows.</li>
+    <li><strong>ext4:</strong> Common file system used in Linux.</li>
+</ul>
+
+<hr>
+<h3>Interactive Video</h3>
+<p>Watch this video to learn more about operating systems:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lAY4j7v2nUo" title="Operating Systems Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h1>Chapter 3: Computer Networks</h1>
+
+<h2>3.1 Introduction to Computer Networks</h2>
+<p>A computer network is a collection of interconnected computing devices that can communicate with each other and share resources.</p>
+
+<h3>Key Benefits:</h3>
+<ul>
+    <li><strong>Resource Sharing:</strong> Sharing printers, files, and internet connections.</li>
+    <li><strong>Communication:</strong> Enabling communication through email, instant messaging, and video conferencing.</li>
+    <li><strong>Data Backup and Recovery:</strong> Centralized data storage and backup.</li>
+    <li><strong>Increased Efficiency:</strong> Streamlining workflows and improving productivity.</li>
+</ul>
+
+<h2>3.2 Network Topologies</h2>
+<p>The physical or logical arrangement of a network.</p>
+
+<h3>Bus Topology:</h3>
+<p>All devices are connected to a single cable (the bus).  Simple but vulnerable to cable breaks.</p>
+<img src="bus_topology.png" alt="Bus Topology" width="300">
+<p><em>Illustration of a Bus Topology.</em></p>
+
+<h3>Star Topology:</h3>
+<p>All devices are connected to a central hub or switch.  More robust than bus topology.</p>
+
+<h3>Ring Topology:</h3>
+<p>Devices are connected in a closed loop. Data travels in one direction.</p>
+
+<h3>Mesh Topology:</h3>
+<p>Each device is connected to multiple other devices.  Highly redundant but expensive.</p>
+
+<h2>3.3 Network Protocols</h2>
+<p>A set of rules that govern communication between devices on a network.</p>
+
+<h3>TCP/IP (Transmission Control Protocol/Internet Protocol):</h3>
+<p>The foundation of the internet. Defines how data is transmitted over a network.</p>
+<ul>
+    <li><strong>TCP:</strong> Provides reliable, connection-oriented communication.</li>
+    <li><strong>IP:</strong> Provides addressing and routing of data packets.</li>
+</ul>
+
+<h3>HTTP (Hypertext Transfer Protocol):</h3>
+<p>Used for transferring web pages and other web resources.</p>
+
+<h3>FTP (File Transfer Protocol):</h3>
+<p>Used for transferring files between computers.</p>
+
+<h3>SMTP (Simple Mail Transfer Protocol):</h3>
+<p>Used for sending email.</p>
+
+<h2>3.4 Network Devices</h2>
+<p>Hardware components used to build a network.</p>
+
+<h3>Hub:</h3>
+<p>Simple device that broadcasts data to all connected devices.</p>
+
+<h3>Switch:</h3>
+<p>More intelligent device that forwards data only to the intended recipient.</p>
+
+<h3>Router:</h3>
+<p>Connects different networks together and routes data between them.</p>
+
+<h3>Modem:</h3>
+<p>Converts digital signals to analog signals and vice versa, allowing computers to communicate over telephone lines.</p>
+
+<h2>3.5 Network Types</h2>
+<p>Categorizing networks based on their scope and size.</p>
+
+<h3>LAN (Local Area Network):</h3>
+<p>Connects devices within a limited area, such as a home, office, or school.</p>
+
+<h3>WAN (Wide Area Network):</h3>
+<p>Connects devices over a large geographical area, such as a city, country, or the world.</p>
+
+<h3>MAN (Metropolitan Area Network):</h3>
+<p>Connects devices within a metropolitan area, such as a city or a large campus.</p>
+
+<hr>
+<h3>Interactive Video</h3>
+<p>Watch this video to learn more about computer networks:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qiQR5rTSshw" title="Computer Networks Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
