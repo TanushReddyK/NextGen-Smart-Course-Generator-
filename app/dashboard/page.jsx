@@ -1,15 +1,15 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
-import WelcomeBanner from './_components/WelcomeBanner';
-import CourseList from './_components/CourseList';
-
+import AddCourse from './_components/AddCourse'
+import UserCourseList from './_components/UserCourseList'
 
 function Dashboard() {
   return (
     <div>
-        <WelcomeBanner/>
-        <CourseList/>
+      <AddCourse/>
+      <UserCourseList/>
     </div>
   )
 }
 
-export default Dashboard;
+export default Dashboard

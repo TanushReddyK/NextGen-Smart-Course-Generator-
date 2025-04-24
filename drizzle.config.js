@@ -1,9 +1,8 @@
-import { defineConfig } from "drizzle-kit";
-
-export default defineConfig({
-  dialect: "postgresql",
-  schema: "./configs/schema.js",
-  dbCredentials: {
-    url: "postgresql://neondb_owner:npg_0ParE5dCFmqg@ep-dark-wind-a88i7n1b-pooler.eastus2.azure.neon.tech/Ai-Study-Material-gen-1?sslmode=require",
-  },
-});
+/** @type { import("drizzle-kit").Config } */
+export default {
+    schema: "./configs/schema.jsx",
+    dialect: 'postgresql',
+    dbCredentials: {
+      url: 'postgresql://ai-interview-mocker_owner:CQI0UkNiehL8@ep-cold-snow-a5odzvmg-pooler.us-east-2.aws.neon.tech/AI-Course-Generator?sslmode=require',
+    }
+  };

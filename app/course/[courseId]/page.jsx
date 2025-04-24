@@ -1,43 +1,46 @@
-"use client"
-import DashboardHeader from '@/app/dashboard/_components/DashboardHeader';
-import axios from 'axios';
-import { useParams } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
-import CourseIntroCard from './_components/CourseIntroCard';
-import StudyMaterialSection from './_components/StudyMaterialSection';
-import ChapterList from './_components/ChapterList';
+"use client";
+import Header from '@/app/_components/Header';
+import ChapterList from '@/app/create-course/[courseId]/_components/ChapterList';
+import CourseBasicInfo from '@/app/create-course/[courseId]/_components/CourseBasicInfo';
+import CourseDetail from '@/app/create-course/[courseId]/_components/CourseDetail';
+import { db } from '@/configs/db';
+import { CourseList } from '@/configs/schema';
+import { eq } from 'drizzle-orm';
+import Link from 'next/link';
+import React, { useEffect, useState, use } from 'react';
 
-function Course() {
-    const {courseId}=useParams();
-    const [course,setCourse]=useState();
-    useEffect(()=>{
-        GetCourse();
-    },[])
-    const GetCourse=async()=>{
-        const result=await axios.get('/api/courses?courseId='+courseId);
+function Course({ params: paramsPromise }) {
+    const params = use(paramsPromise); // ✅ Unwrap the Promise
+
+    const [course, setCourse] = useState(null);
+
+    useEffect(() => {
+        if (params?.courseId) {
+            GetCourse(params.courseId);
+        }
+    }, [params]);
+
+    const GetCourse = async (courseId) => {
+        const result = await db
+            .select()
+            .from(CourseList)
+            .where(eq(CourseList?.courseId, courseId));
+
+        setCourse(result[0]);
         console.log(result);
-        setCourse(result.data.result);
-    }
+    };
 
-    if(!course)
-    {
-        return ;
-    }
-
-  return (
-    <div>
-     
-        <div className=''> 
-        {/* Course Intro  */}
-            <CourseIntroCard course={course} />
-        {/* Study Materials Options  */}
-            <StudyMaterialSection  courseId={courseId} course={course} />
-        {/* Chapter List  */}
-            <ChapterList course={course} />
+    return (
+        <div>
+            <Header />
+            <div className="px-10 p-10 md:px-20 lg:px-44">
+                <CourseBasicInfo course={course} edit={false} />
+                <CourseDetail course={course} />
+                <ChapterList course={course} edit={false} />
+            </div>
+           
         </div>
-        
-    </div>
-  )
+    );
 }
 
-export default Course
+export default Course;
