@@ -26,6 +26,9 @@ NextGen Smart Course Generator is an intelligent tool that helps educators, trai
 ![Screenshot 2025-04-24 214955](https://github.com/user-attachments/assets/39a6a03e-038a-4a90-8ab7-65435ce3df76)
 ![Screenshot 2025-04-24 214822](https://github.com/user-attachments/assets/2a659ad7-a1af-40f2-8197-251d91a3317f)
 
+also avilavble projects : 
+![Screenshot 2025-04-24 204813](https://github.com/user-attachments/assets/30c48657-df5b-450c-b8c9-132dbbf4b5b8)
+access to projects direct deployable files & guidance : 2000
 ## 🧑‍💻 Getting Started
 
 ```bash
