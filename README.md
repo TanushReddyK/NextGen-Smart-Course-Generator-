@@ -1,4 +1,4 @@
-# 📚 NextGen Smart Course Generator   for help : 9113674413
+# 📚 NextGen Smart Course Generator ,  ( for help : 9113674413 )
 quick demo : https://ai-educator-course-gen.vercel.app/sign-in?redirect_url=https%3A%2F%2Fai-educator-course-gen.vercel.app%2Fdashboard, and https://ai-educator-course-gen.vercel.app/
 An AI-powered platform to auto-generate tailored course content, assessments, and summaries.
 
